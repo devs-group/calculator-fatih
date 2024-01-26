@@ -1,0 +1,34 @@
+<div class="calculator-container">
+    <input readonly [value]="currentValue">
+  <div>
+    <div class="calculator-inputs">
+      <button (click)="clearValue()">AC</button>
+      <button (click)="addOperator('()')">()</button>
+      <button (click)="addOperator('%')">%</button>
+      <button (click)="addOperator('/')">/</button>
+    </div>
+    <div class="calculator-inputs">
+      <button (click)="addNumber('7')">7</button>
+      <button (click)="addNumber('8')">8</button>
+      <button (click)="addNumber('8')">9</button>
+      <button (click)="addOperator('*')">*</button>
+    </div>
+    <div class="calculator-inputs">
+      <button (click)="addNumber('4')">4</button>
+      <button (click)="addNumber('5')">5</button>
+      <button (click)="addNumber('6')">6</button>
+      <button (click)="addOperator('-')">-</button>
+    </div>
+    <div class="calculator-inputs">
+      <button (click)="addNumber('1')">1</button>
+      <button (click)="addNumber('2')">2</button>
+      <button (click)="addNumber('3')">3</button>
+      <button (click)="addOperator('+')">+</button>
+    </div>
+    <div class="calculator-inputs">
+      <button (click)="addNumber('0')">0</button>
+      <button (click)="addNumber('.')">.</button>
+      <button (click)="calculate()">=</button>
+    </div>
+  </div>
+</div>
